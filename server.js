@@ -8,7 +8,7 @@ var express = require('express'),
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
 //mongodb://localhost/taskdb
-mongoose.connect('mongodb://mongo:27017/taskdb').then(() => {
+mongoose.connect('mongodb://mongo:27017/taskdb', { useNewUrlParser: true }).then(() => {
   console.log("Connected to Database");
 }).catch((err) => {
   console.log("Not connected to database ERROR! ", err);
