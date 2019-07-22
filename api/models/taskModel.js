@@ -14,11 +14,11 @@ var TaskSchema = new Schema({
   },
   startdate: {
     type: Date,
-    default: Date.now
+    default: Date.now()
   },
   enddate: {
     type: Date,
-    default: Date.now
+    default: Date.now()
   },
   category: {
     type: String,
